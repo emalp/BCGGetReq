@@ -1,12 +1,10 @@
 # BCGGetReq
 The get request sent to BCG.
 
-A very simple protocol was followed to get the JSON result back from the BCG Server using the API Key.     
-Several slightly complex programming methods could've been used for the get and post request using several programming languages.  
+A very simple method was followed to get the JSON result back from the BCG Server using the API Key.     
+Several slightly complex programming methods could've been used for the get and post request using several programming languages. HTTP REST Clients such as Postman and/or Insomnia could have easily done the job too.
   
-For this particular case a simple get and post request to the BCG server using simple REST clients such as Postman or Insomnia was tested. Insomnia did a very well job with only merely 3-5 clicks and a bit of typing to get the JSON result back as it was only a one time thing.  
-  
-But this readme also specifies a progrmmable way to do the same thing.  
-For "web's" sake I'll be using javascript and use "axios" for the get and post requests.
-
-NOTE: For simplicity, I wanted to use es6 for easier JS coding, so as using babel was too much
+For this particular case a simple get and post request to the BCG server using "axios", a promise based HTTP client for javascript was used. This particular code available in "register.js" has been tested in NodeJS.
+ 
+ 1. Please make sure to run a simple "yarn install" or "npm install" to install axios.
+ 2. "node register.js" runs the register.js file which gets an API key and sends a post request to register my name and email.
