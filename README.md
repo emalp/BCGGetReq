@@ -8,3 +8,5 @@ For this particular case a simple get and post request to the BCG server using s
   
 But this readme also specifies a progrmmable way to do the same thing.  
 For "web's" sake I'll be using javascript and use "axios" for the get and post requests.
+
+NOTE: For simplicity, I wanted to use es6 for easier JS coding, so as using babel was too much
